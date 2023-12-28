@@ -19,23 +19,24 @@ const getProduct = cache(async (id: string) => {
     notFound();
   }
   return product;
-})
+});
 
 // customize metadata
-export async function generateMetadata({params: {id}}: ProductPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params: { id },
+}: ProductPageProps): Promise<Metadata> {
   const product = await getProduct(id);
 
   return {
-    title: product.name + " - Amazon Clone",
+    title: product.name + ' - Amazon Clone',
     description: product.description,
     openGraph: {
-      images: [{url: product.imageUrl}]
-    }
-  }
+      images: [{ url: product.imageUrl }],
+    },
+  };
 }
 
 const page = async ({ params: { id } }: ProductPageProps) => {
-  
   const product = await getProduct(id);
 
   return (
@@ -48,7 +49,7 @@ const page = async ({ params: { id } }: ProductPageProps) => {
         className="rounded-lg"
         priority
       />
-      <div >
+      <div>
         <h1 className="text-5xl font-bold">{product.name}</h1>
         <PriceTag price={product.price} className="mt-4" />
         <p className="py-6">{product.description}</p>
