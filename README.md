@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-Commerce Website
+
+This is a full-stack e-commerce website built using Next.js, Prisma, MongoDB, Tailwind CSS, and DaisyUI.
+
+## Features
+
+- **Next.js:** Utilizes the Next.js framework for building React applications, providing server-side rendering, and efficient routing.
+- **Prisma:** Uses Prisma as the database ORM (Object-Relational Mapping) for seamless interaction with MongoDB.
+- **MongoDB:** Stores and manages data in a MongoDB database.
+- **Tailwind CSS:** Implements a utility-first CSS framework for styling the user interface.
+- **DaisyUI:** Enhances Tailwind CSS with additional components and utilities.
+
+### Website - [https://ecomerce-nextjswebsite.vercel.app/](https://ecomerce-nextjswebsite.vercel.app/)
+
+## Functionality
+
+- **User Authentication:** Integrates Google API services for user authentication, allowing users to sign in securely.
+- **Anonymous Carts:** Supports anonymous shopping carts, enabling users to add items to their carts without signing in.
 
 ## Getting Started
 
-First, run the development server:
+1. **Installation:**
+   ```bash
+   # Clone the repository
+   git clone https://github.com/your-username/e-commerce-website.git
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   # Navigate to the project folder
+   cd e-commerce-website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   # Install dependencies
+   npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   prisma generate
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Configuration**
+   - Create a `.env` file in the project root and add the following values:
+    ```bash
+    DATABASE_URL="your-mongodb-database-url"
+    GOOGLE_CLIENT_ID="your-google-client-id"
+    GOOGLE_CLIENT_SECRET="your-google-client-secret"
+    NEXTAUTH_URL="http://localhost:3000"
+    NEXTAUTH_SECRET="your-nextauth-secret"
 
-## Learn More
+4. **Run the Application**
+   ```bash
+   # Start the development server
+    npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+5. **Open in Browser**
+   ```bash
+   Open your web browser and visit http://localhost:3000 to view the website.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Contribution**
+Contributions are welcome! Feel free to open issues or pull requests.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
