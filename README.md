@@ -10,7 +10,7 @@ This is a full-stack e-commerce website built using Next.js, Prisma, MongoDB, Ta
 - **Tailwind CSS:** Implements a utility-first CSS framework for styling the user interface.
 - **DaisyUI:** Enhances Tailwind CSS with additional components and utilities.
 
-### Website - [https://ecomerce-nextjswebsite.vercel.app/](https://ecomerce-nextjswebsite.vercel.app/)
+### Website - [https://ecomerce-nextjswebsite.vercel.app/](https://ecommerce-next-js-swayam-badhes-projects.vercel.app/)
 
 ## Functionality
 
@@ -20,6 +20,7 @@ This is a full-stack e-commerce website built using Next.js, Prisma, MongoDB, Ta
 ## Getting Started
 
 1. **Installation:**
+
    ```bash
    # Clone the repository
    git clone https://github.com/your-username/e-commerce-website.git
@@ -32,26 +33,33 @@ This is a full-stack e-commerce website built using Next.js, Prisma, MongoDB, Ta
 
    prisma generate
 
-2. **Configuration**
-   - Create a `.env` file in the project root and add the following values:
-    ```bash
-    DATABASE_URL="your-mongodb-database-url"
-    GOOGLE_CLIENT_ID="your-google-client-id"
-    GOOGLE_CLIENT_SECRET="your-google-client-secret"
-    NEXTAUTH_URL="http://localhost:3000"
-    NEXTAUTH_SECRET="your-nextauth-secret"
+   ```
 
-4. **Run the Application**
+2. **Configuration**
+
+   - Create a `.env` file in the project root and add the following values:
+
+   ```bash
+   DATABASE_URL="your-mongodb-database-url"
+   GOOGLE_CLIENT_ID="your-google-client-id"
+   GOOGLE_CLIENT_SECRET="your-google-client-secret"
+   NEXTAUTH_URL="http://localhost:3000"
+   NEXTAUTH_SECRET="your-nextauth-secret"
+
+   ```
+
+3. **Run the Application**
+
    ```bash
    # Start the development server
     npm run dev
 
-5. **Open in Browser**
+   ```
+
+4. **Open in Browser**
    ```bash
    Open your web browser and visit http://localhost:3000 to view the website.
+   ```
 
 **Contribution**
 Contributions are welcome! Feel free to open issues or pull requests.
-
-   
-
